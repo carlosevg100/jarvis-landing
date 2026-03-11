@@ -2,15 +2,15 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'], weight: ['300', '400', '500'] })
 
 export const metadata: Metadata = {
-  title: 'Jarvis — Seu WhatsApp agora tem memória.',
-  description: 'Encaminhe qualquer mensagem pro Jarvis — áudio, print, PDF, texto bagunçado. Ele organiza tudo e te lembra na hora certa.',
+  title: 'Jarvis \u2014 Seu WhatsApp agora tem mem\u00f3ria',
+  description: 'Encaminhe qualquer mensagem pro Jarvis \u2014 \u00e1udio, print, PDF. Ele organiza tudo e te lembra na hora certa.',
   openGraph: {
-    title: 'Jarvis — Seu WhatsApp agora tem memória.',
-    description: 'Organize todos os seus compromissos só encaminhando mensagens no WhatsApp.',
-    url: 'https://jarvis-landing.vercel.app',
+    title: 'Jarvis \u2014 Seu WhatsApp agora tem mem\u00f3ria',
+    description: 'Organize sua vida pelo WhatsApp. R$19,90/m\u00eas. 3 dias gr\u00e1tis.',
+    locale: 'pt_BR',
     type: 'website',
   },
 }
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
-      <body className={`${inter.className} bg-[#0a0a0a] antialiased`}>
+      <body className={`${inter.className} bg-bg antialiased`}>
         {children}
       </body>
     </html>
